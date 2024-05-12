@@ -41,12 +41,12 @@ export default {
   methods: {
     testFun() {
       axios
-        .get("http://127.0.0.1:8000/get-tickets")
+        .get("http://127.0.0.1:8000/api/test")
         .then((response) => {
           // Handle successful response
           if (response) {
             console.log(response.data); // Do something with the received data
-            this.backendData = JSON.stringify(response.data.tickets);
+            this.backendData = JSON.stringify(response.data.message);
           }
         })
         .catch((error) => {
