@@ -5,6 +5,7 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
     <router-link to="/ticket">Ticket</router-link>|
+    <router-link to="/register">Register</router-link>|
     <a class="logout-button" @click.prevent="logout">Logout</a>
   </nav>
 </template>
